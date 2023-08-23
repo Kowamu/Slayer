@@ -77,7 +77,9 @@ namespace Common.Editor.Generators
                 }
                 
                 var memoryDatabaseCode = File.ReadAllText(memoryDatabaseCodePath);
-                memoryDatabaseCode = memoryDatabaseCode.Replace("options)", "options, int maxDegreeOfParallelism)");
+                memoryDatabaseCode = memoryDatabaseCode.Replace(
+                    "MessagePack.MessagePackSerializerOptions options)", 
+                    "MessagePack.MessagePackSerializerOptions options, int maxDegreeOfParallelism)");
                 File.WriteAllText(memoryDatabaseCodePath, memoryDatabaseCode);
                 
                 // メインスレッドに戻してからコンパイルを実行する
