@@ -1,6 +1,6 @@
 .idea/
 GeneratorTools/
-Assets/StoreAssets/
+Assets/Addressables/Sprites/
 
 # Created by https://www.toptal.com/developers/gitignore/api/rider,unity,visualstudio,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=rider,unity,visualstudio,visualstudiocode

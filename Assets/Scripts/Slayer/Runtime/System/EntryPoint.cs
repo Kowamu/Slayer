@@ -2,7 +2,7 @@ using MessagePack;
 using MessagePack.Resolvers;
 using UnityEngine;
 
-namespace Common.Core
+namespace WanwanLand.Slayer.System
 {
     internal static class EntryPoint
     {
@@ -14,7 +14,7 @@ namespace Common.Core
 
         private static void SetUp()
         {
-#if UNITY_EDITOR //Domain Reload
+#if UNITY_EDITOR
             if (MessagePackSerializerOptions.Standard == MessagePackSerializer.DefaultOptions)
             {
 #endif

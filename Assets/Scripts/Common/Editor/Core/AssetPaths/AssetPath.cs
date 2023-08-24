@@ -19,23 +19,23 @@ namespace WanwanLand.Common.Editor.Core.AssetPaths
         /// <summary>
         /// Gets the asset directory path.
         /// </summary>
-        public string Path { get; }
+        public string Value { get; }
         
         // --- ctor ---
 
         /// <summary>
         /// Initializes a new instance of AssetPath with the specified path.
         /// </summary>
-        /// <param name="path">The asset directory path.</param>
-        public AssetPath(string path)
+        /// <param name="value">The asset directory path.</param>
+        public AssetPath(string value)
         {
-            Validate(path);
-            Path = path;
+            Validate(value);
+            Value = value;
         }
 
         private AssetPath(SerializationInfo info, StreamingContext context)
         {
-            Path = info.GetString(nameof(Path));
+            Value = info.GetString(nameof(Value));
         }
         
         // --- operator ---
@@ -46,22 +46,17 @@ namespace WanwanLand.Common.Editor.Core.AssetPaths
         
         // --- method ---
         
-        public bool Equals(AssetPath other)
-        {
-            if (ReferenceEquals(null, other)) return false;
-            if (ReferenceEquals(this, other)) return true;
-            return Path == other.Path;
-        }
+        public bool Equals(AssetPath other) => other != null && Value == other.Value;
 
         public override bool Equals(object obj) => Equals(obj as AssetPath);
 
-        public override int GetHashCode() => Path?.GetHashCode() ?? 0;
+        public override int GetHashCode() => Value.GetHashCode();
         
-        public override string ToString() => Path;
+        public override string ToString() => Value;
         
         void ISerializable.GetObjectData(SerializationInfo info, StreamingContext context)
         {
-            info.AddValue(nameof(Path), Path);
+            info.AddValue(nameof(Value), Value);
         }
 
         // --- static method ---
@@ -72,15 +67,8 @@ namespace WanwanLand.Common.Editor.Core.AssetPaths
         /// <param name="path">The asset directory path to validate.</param>
         public static void Validate(string path)
         {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ArgumentException("Path cannot be null or empty");
-            }
-
-            if (!path.StartsWith(RootDirectory))
-            {
-                throw new ArgumentException($"Path must start with {RootDirectory}");
-            }
+            if (string.IsNullOrEmpty(path)) throw new ArgumentException("Path cannot be null or empty");
+            if (!path.StartsWith(RootDirectory)) throw new ArgumentException($"Path must start with {RootDirectory}");
         }
     }
 }

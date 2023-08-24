@@ -1,63 +1,47 @@
 ﻿using System;
-using System.Runtime.Serialization;
+using MessagePack;
 
-namespace Slayer.Runtime.Domains.Assets.Addresses
+namespace Slayer.Runtime.Domain.Asset.Addresses
 {
     /// <summary>
     /// Represents an asset address in the game.
     /// </summary>
-    [Serializable]
-    public sealed class AssetAddress : IEquatable<AssetAddress>, ISerializable
+    [MessagePackObject(true)]
+    public sealed class AssetAddress : IEquatable<AssetAddress>
     {
         // --- field ---
         
         /// <summary>
         /// The address of the asset.
         /// </summary>
-        public string Address { get; }
+        public string Value { get; }
 
         // --- ctor ---
         
         /// <summary>
         /// Initializes a new instance of the AssetAddress class with the specified address.
         /// </summary>
-        /// <param name="address">The address of the asset.</param>
-        public AssetAddress(string address)
+        /// <param name="value">The address of the asset.</param>
+        public AssetAddress(string value)
         {
-            Validate(address);
-            Address = address;
-        }
-
-        private AssetAddress(SerializationInfo info, StreamingContext context)
-        {
-            Address = info.GetString(nameof(Address));
+            Validate(value);
+            Value = value;
         }
         
         // --- operator ---
         
         public static bool operator ==(AssetAddress left, AssetAddress right) => Equals(left, right);
-
+        
         public static bool operator !=(AssetAddress left, AssetAddress right) => !Equals(left, right);
         
         // --- method ---
-
+        public bool Equals(AssetAddress other) => other != null && Value == other.Value;
+        
         public override bool Equals(object obj) => Equals(obj as AssetAddress);
         
-        public bool Equals(AssetAddress other)
-        {
-            if (ReferenceEquals(null, other)) return false;
-            if (ReferenceEquals(this, other)) return true;
-            return Address == other.Address;
-        }
-
-        public override int GetHashCode() => Address.GetHashCode();
-
-        public override string ToString() => Address;
-
-        void ISerializable.GetObjectData(SerializationInfo info, StreamingContext context)
-        {
-            info.AddValue(nameof(Address), Address);
-        }
+        public override int GetHashCode() => Value.GetHashCode();
+        
+        public override string ToString() => Value;
         
         // --- static method ---
 
@@ -67,10 +51,7 @@ namespace Slayer.Runtime.Domains.Assets.Addresses
         /// <param name="address">The address to be validated.</param>
         private static void Validate(string address)
         {
-            if (string.IsNullOrWhiteSpace(address))
-            {
-                throw new ArgumentException($"Invalid address: {address}");
-            }
+            if (string.IsNullOrWhiteSpace(address)) throw new ArgumentException($"Invalid address: {address}");
         }
     }
 }

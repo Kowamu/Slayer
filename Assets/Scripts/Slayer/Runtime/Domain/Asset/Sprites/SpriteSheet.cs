@@ -2,13 +2,15 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using MasterMemory;
 using MessagePack;
+using Slayer.Runtime.Domain.Asset.Addresses;
 
 namespace WanwanLand.Slayer.Domain.Asset.Sprites
 {
     /// <summary>
     /// Represents a sprite sheet in the game.
     /// </summary>
-    [MemoryTable("sprite_sheet"), MessagePackObject(true)]
+    [MemoryTable("sprite_sheet")]
+    [MessagePackObject(true)]
     public sealed class SpriteSheet : IEquatable<SpriteSheet>
     {
         // --- field ---
@@ -23,7 +25,7 @@ namespace WanwanLand.Slayer.Domain.Asset.Sprites
         /// Gets the asset address of the sprite.
         /// </summary>
         [NotNull]
-        public string SpriteAssetAddress { get; }
+        public AssetAddress SpriteAssetAddress { get; }
         
         /// <summary>
         /// Gets the number of vertical divisions in the sprite sheet.
@@ -44,7 +46,7 @@ namespace WanwanLand.Slayer.Domain.Asset.Sprites
         /// <param name="spriteAssetAddress">The asset address of the sprite.</param>
         /// <param name="verticalDivisionCount">The number of vertical divisions in the sprite sheet.</param>
         /// <param name="horizontalDivisionCount">The number of horizontal divisions in the sprite sheet.</param>
-        public SpriteSheet(int spriteSheetId, [DisallowNull] string spriteAssetAddress, int verticalDivisionCount, int horizontalDivisionCount)
+        public SpriteSheet(int spriteSheetId, [DisallowNull] AssetAddress spriteAssetAddress, int verticalDivisionCount, int horizontalDivisionCount)
         {
             SpriteSheetId = spriteSheetId;
             SpriteAssetAddress = spriteAssetAddress;
@@ -56,15 +58,19 @@ namespace WanwanLand.Slayer.Domain.Asset.Sprites
 
         public bool Equals(SpriteSheet other)
         {
-            if (ReferenceEquals(null, other)) return false;
-            if (ReferenceEquals(this, other)) return true;
-            if (SpriteSheetId != other.SpriteSheetId) return false;
-            if (SpriteAssetAddress != other.SpriteAssetAddress) return false;
-            if (VerticalDivisionCount != other.VerticalDivisionCount) return false;
-            if (HorizontalDivisionCount != other.HorizontalDivisionCount) return false;
-            return true;
+            return 
+                other != null &&
+                SpriteSheetId == other.SpriteSheetId &&
+                SpriteAssetAddress == other.SpriteAssetAddress && 
+                VerticalDivisionCount == other.VerticalDivisionCount && 
+                HorizontalDivisionCount == other.HorizontalDivisionCount;
         }
         
         public override bool Equals(object obj) => Equals(obj as SpriteSheet);
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(SpriteSheetId, SpriteAssetAddress, VerticalDivisionCount, HorizontalDivisionCount);
+        }
     }
 }

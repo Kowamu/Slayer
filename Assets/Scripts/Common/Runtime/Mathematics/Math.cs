@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-namespace Common.Maths
+namespace Common.Mathematics
 {
     /// <summary>
     /// 数学関数を定義するクラス

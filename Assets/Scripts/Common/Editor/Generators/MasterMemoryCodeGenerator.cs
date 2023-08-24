@@ -12,9 +12,9 @@ namespace Common.Editor.Generators
     {
         
         private const string GeneratorDirectoryAssetPath = @"..\GeneratorTools\MasterMemory.Generator";
-        private const string Namespace = "Slayer.Domains";
-        private const string ImportDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domains";
-        private const string OutputDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domains\Generated\MasterMemory";
+        private const string Namespace = "Slayer.Domain";
+        private const string ImportDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domain";
+        private const string OutputDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domain\Generated\MasterMemory";
 
         [MenuItem("Generator/MasterMemory")]
         private static void Generate()

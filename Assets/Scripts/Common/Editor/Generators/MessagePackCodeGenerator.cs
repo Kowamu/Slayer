@@ -11,9 +11,9 @@ namespace Common.Editor.Generators
     public static class MessagePackCodeGenerator
     {
         private const string GeneratorDirectoryAssetPath = @"..\GeneratorTools\mpc";
-        private const string Namespace = "Slayer.Domains";
-        private const string ImportDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domains";
-        private const string OutputDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domains\Generated\MessagePack";
+        private const string Namespace = "Slayer.Domain";
+        private const string ImportDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domain";
+        private const string OutputDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domain\Generated\MessagePack";
 
         [MenuItem("Generator/MessagePack")]
         private static void Generate()
