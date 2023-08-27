@@ -1,0 +1,19 @@
+{
+    "name": "Slayer.Domain",
+    "rootNamespace": "",
+    "references": [
+        "MessagePack",
+        "MessagePack.Annotations",
+        "MasterMemory",
+        "Unity.Mathematics"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Slayer.Common",
+    "rootNamespace": "",
+    "references": [
+        "Unity.InputSystem",
+        "UniRx"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

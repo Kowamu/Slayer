@@ -1,0 +1,1375 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Game
+  m_EditorClassIdentifier: 
+  m_GroupName: Game
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b8455e2a31adb264ca9468343bc0d34f
+  m_SerializeEntries:
+  - m_GUID: ff5168e551ca5ff4bab6830babdbf60c
+    m_Address: WildOrcAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df4b4fb90b5585145b29219350a8ac17
+    m_Address: MinotaurJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cfbdc32e77b7f0e4f8e3d65b39229e2d
+    m_Address: PumpkinHorrorBaseAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf475d1d990ca29459e43be5ec2b0030
+    m_Address: AmazonAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afe4883b9a34ed647b94092f228d3e86
+    m_Address: BatFlyIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f9d6b09d069d6541a34f91f7301d45c
+    m_Address: ShadowMotherSlimeIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ff488a2167292d47b4c6004d9099e0c
+    m_Address: MinotaurAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f54be90068fd0548b039756d701c0fc
+    m_Address: ShadowSlimeIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0fd7ba95d6325334f8fddfeb0af6531c
+    m_Address: GoblinAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee8ce5c99be67544b8258226d2fa2b3a
+    m_Address: WildOrcDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce7de954203e6894cb0b548ebadc49dd
+    m_Address: GoblinJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ced65ff3d320ff64cbd193b9378a0101
+    m_Address: HumanSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be4a108918531ad4bb507e3f1084cfae
+    m_Address: HumanTownsfolkDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be39dc097e182c74cb826a6ff381cf5e
+    m_Address: ElfIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bec371a0a1db29842be4376d3bbf0906
+    m_Address: GoblinDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aee47f70324ebfd46b9c564ecd88bd76
+    m_Address: ShadowDwarfDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae91d54035bc19f498c129056be1934d
+    m_Address: ShadowHumanoidSoulDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e2a1b1d382a0a843bddea47d01104ce
+    m_Address: ShadowWildfireFly
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e956147d542ce74290fd85981e59c72
+    m_Address: ShadowCentaurDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e62b5759c5699b43afe7cddc491f143
+    m_Address: ShadowWolfDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ebaf513ddc034c47a2374e68de6aefe
+    m_Address: DwarfDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e0a54ed2619fb449a93b9780f50fc95
+    m_Address: WargoAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e490cd77faba414fae97f80fe7a3283
+    m_Address: ShadowTrollCyclopMinotaurWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2eb627d147db7a8499256bcb4428ec53
+    m_Address: OrcDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ea651ed684450e469480c99b7647da3
+    m_Address: ZombieAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e11d65517258884b9e04cff4bcfb23d
+    m_Address: ShadowMotherSlimeDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd26efb1ae61f874ebbac07c330e39ac
+    m_Address: TrasgoWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed13d1234826dec48a78cdd2d1cda3d7
+    m_Address: WildfireDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed9105649e5b5754aa760b2a7ddcec1d
+    m_Address: HumanJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ddacbbd21e33fd24bb645eb4d7f2c7e4
+    m_Address: EvilSnowmanActivation
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd5dc5464c5ae5e4cafca38b2de022a4
+    m_Address: YetiIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adcb37eb17f22594ea6bea437e45ef19
+    m_Address: ShadowHumanoidChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7dd305e49827e924db65a68201576e0e
+    m_Address: SlimeGreenIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d339d8f4ca682c42b1d1181d3db510c
+    m_Address: WargoDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6dac693333e4daf45baea13715cba1a0
+    m_Address: ShadowDwarSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6db2c6a7e1bc6b742880e5a9b118e296
+    m_Address: ShadowBlueSlimeJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d381b4c97d87b241bdd6b5ecd1fb465
+    m_Address: OrcChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d4dba68be595da46a1f74b22e7d65d1
+    m_Address: HumanTownsfolkSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d3d1c26808f3c64494a020b589f45e0
+    m_Address: GoblinChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d5b4300c76d2ac40bf92e44bab5b61f
+    m_Address: DwarfWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0dd68e6e2533d66449b3d9c98ca19026
+    m_Address: ShadowWolfAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc8678858f3e11341a9b75f90b8339de
+    m_Address: ShadowWolfJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ecbb57a1401babf41be97737e113ed69
+    m_Address: SkeletonDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc839c782bdad2e4fbdd3a4a23f371c1
+    m_Address: BlueSlimeDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: acd90c404d9d0e644a96bf108f3ee1bd
+    m_Address: WargoDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: acb624dd75fef1b43a7ba1e07b782c73
+    m_Address: HalflingAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac153f93b08229140a67039a728b3948
+    m_Address: ShadowWildfireDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c5b89f4049966f4c84cf79b361bfd70
+    m_Address: WildOrcWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9caaee702fdbe0a43a623f27e3504557
+    m_Address: ElfJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c657c0b9a7856d44b8d2ec2fd2ca48f
+    m_Address: ZombieBaseWalkShadow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9cb07bc63825d65498e3911650b28e3e
+    m_Address: TrasgoChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c4e6cb32a5618b4caf9df3bfab814dc
+    m_Address: MinotaurAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c0277099786e0746aa8f552c4b95dd8
+    m_Address: SkeletonIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c1f16f55016c0c48a6fbdd6a47733d7
+    m_Address: WildOrcIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6cdd6f1714e0f7c4989cdd1387e332f1
+    m_Address: WildfireDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c57fad0a6b2ac34ca5a4e87f4851e21
+    m_Address: WargoIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c13552660aeef8468bee2e818fbf419
+    m_Address: BlueMotherSlimeAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c93cd466546f554d99173af35f161ba
+    m_Address: ZombieDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ce377fb915bd2a488cc6f4e77cc1d57
+    m_Address: EvilSnowmanActivationShadows
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbccb7c3f9b44a846aa838f2e9e8298b
+    m_Address: MotherSlimeGreenDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb1d296a755469f49af899e1e03f8665
+    m_Address: ZombieBaseDmgShadow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb2d350ea22f2b644a26d094450ac16a
+    m_Address: TrollIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cbe4ee4aa940be34cabc188846339f67
+    m_Address: WolfDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9bcd49d55dea83c47a6a2a1e9728a94a
+    m_Address: TrollAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9bc9f7c811d123c45ac7e76dd0a06f72
+    m_Address: ShadowPumkinHorrorIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9bd5012f97874c946b12dacce11a8814
+    m_Address: SkeletonAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b9b27e0723e8884aa31fc50d5d19859
+    m_Address: ShadowMotherSlimeDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b4cc7555a52e1143a3459b05caf3a20
+    m_Address: WildfireAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6bca214a305808240a02168a1a0a26ea
+    m_Address: ShadowDwarJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b33eb8cedfb77045a4efd1911a4b825
+    m_Address: WolfDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b4c57bffed223f48862cda1a67711b7
+    m_Address: ZombieBaseAttackShadow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b9d3ef6bf4c0554288c58a60561f0b3
+    m_Address: TrasgoJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bd7710d71cbb7648b33bc01de1306cc
+    m_Address: ShadowCentaurWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b640bb2040fd0749b2f4873fd4fa1d0
+    m_Address: AmazonChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3bc036accc44be440b5940ac116cfb17
+    m_Address: GoblinAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2bafac8e0e86cce44af38b5206388354
+    m_Address: TrollAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b5e569ffd39107449207f6a60ed2137
+    m_Address: ShadowBlueMotherSlimeDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b6c5e0435e2fa74ea0653f7f701d779
+    m_Address: WildOrcAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2bdbf24565904934c98155857cc924b4
+    m_Address: DwarfYellowBearDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2be4cedd3e122e64bb23803cc33d4e0f
+    m_Address: SnowBall
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1bb9050c5d6b21e4fbf342e7c436b2af
+    m_Address: OrcDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0bf84f29d5bcf1347b0e3a7af64a2bef
+    m_Address: SlimeGreenDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fae1667a1b64c1f48849a23198d0865a
+    m_Address: OrcBaseAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eaed8b64cd556ad46a1a860f8a0b9bf7
+    m_Address: ShadowHumanoidJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eac3e0a4f44dd814dab48932dc49e7a6
+    m_Address: ShadowHumanoidAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea205c35fd524cc49820b11b567401a0
+    m_Address: ShadowSkeletonDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da63ff4f009d10b4593f1d575631be2f
+    m_Address: ElfChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: caa7fb0c2816bfa4d905aec37953fe07
+    m_Address: HumanAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa4f3cae1b1185d44a0c0948e16bf266
+    m_Address: ShadowSkeletonPumkinHorrorAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa089e17ac01a6a4fa6dc25d903e5603
+    m_Address: MinotaurIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa56b43ffb10b85459467506bf0879e9
+    m_Address: YetiJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a24b2e599af3eb49ac846be8b435ec0
+    m_Address: CentaurJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a9c6c032f56715488f20a2eb2ee144c
+    m_Address: ShadowWolfDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a94978240e8cef41bed8296ab681f31
+    m_Address: HalflingWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a039d267dd4c154ca9bc9a0e97d1066
+    m_Address: CyclopAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ab14bcc38237be48942cc734445c82f
+    m_Address: GoblinIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a405bc587f3dd84c9c933bffd4c8eff
+    m_Address: MotherSlimeGreenAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a856ac1c0a8ccb4c8de0bff2b1ef58b
+    m_Address: CentaurWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a143eabc4088a2439d19790a7d75424
+    m_Address: ShadowWargoAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ae1a5a8b18f97a49a22f96f6395da97
+    m_Address: TrollJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a2bc0f5d088fa440bcef7242d68221b
+    m_Address: WildOrcDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9e365bf421202f47afe657c0af58d11
+    m_Address: ShadowCentaurIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f940726891eff4a40bf91261e87c4677
+    m_Address: BlueMotherSlimeDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e9eabc37046a67343893de528568677c
+    m_Address: ShadowBatFly
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b9b31c772fb8d434984d126a5957169d
+    m_Address: ShadowDwarWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a980794213ba4184bbe7448c274ca5e7
+    m_Address: TrasgoDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89cc37099973f704c9d778cfcdf936ac
+    m_Address: CyclopIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 79d7d66f61fea8a47aaacd42ca5a56ea
+    m_Address: DwarfYellowBearAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 592481d5a991c9642955c5d5f10b2b0a
+    m_Address: CentaurDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 490a1a028c70c3f4494bfc96fba8fe44
+    m_Address: WolfAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 297732c2c2dc7fa4897c5c5cd7ebf58f
+    m_Address: ZombieBaseDieShadow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8445aba07f1d994a88fd5bd097b9d58
+    m_Address: TrasgoSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8ddf2647884dd44692c6e747996e88a
+    m_Address: ShadowMinotaurDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8fa35bbcb90f004fb3747488a787a9b
+    m_Address: ShadowWolfWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b866173efdaf1f8468c1c8ace1e8abf4
+    m_Address: ShadowBlueMotherSlimeDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a85b2a504065f054e8a9916344c4a2d6
+    m_Address: BlueSlimeDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 988ee4a0589467a4fb835aa3d58858a4
+    m_Address: DwarfIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8820da4af3f22244992a6df63d3cf58e
+    m_Address: ShadowBatDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 589c1c29b4810a14593974888a11094c
+    m_Address: HumanWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58b820ea4f6bb4640bd7612232387919
+    m_Address: HalflingDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58313e2e4e28c294ba8817d6bd6404e1
+    m_Address: TrasgoIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 380c7ad6521f01644b4e3cffb5d221c5
+    m_Address: TrasgoAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 382690442a37c0d4ea1be4038f3da672
+    m_Address: WildOrcJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28605d614320c324a904685fe78fad07
+    m_Address: ShadowPumpkinHorrorDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7c88423ad8ea5648a430ac75cf41208
+    m_Address: WargoBaseWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7a20994af148584e9447975084050a0
+    m_Address: CyclopAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e78037e0325892a4dbf3e41fab1d9c06
+    m_Address: ShadowBlueSlimeDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d79c378ea006dbe41aca4f5d9f556468
+    m_Address: SlimeGreenDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7390658a1fca004ba58037752d3971e
+    m_Address: ShadowTrollCyclopAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7180b3cfdcaf8847a853185babfa461
+    m_Address: ZombieDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b765add4f626d1640bcfae8fe6a3e6ca
+    m_Address: MotherSlimeGreenDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a79b9d1a7911f8d4498993a14739a3ee
+    m_Address: ShadowBlueMotherSlimeJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97405e386364e254d8dd159177f07b4c
+    m_Address: ShadowSlimeDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77eef9935ab83e941a4b774d98bcb5bc
+    m_Address: HumanIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 775c64f46e4fc9f45a4c23798d610cbd
+    m_Address: BatDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 774c277bd954cbc4ea4a625fddb27472
+    m_Address: OrcWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47ce8d657bd34e8499d3d0dc255c7ce0
+    m_Address: HumanTownsfolkAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 179b803d157107d419c96f6ce26e70ac
+    m_Address: WargoAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17691ba066796e44791bf0cbc731cd93
+    m_Address: ShadowCentaurDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07cefd9969cddb3488e8710615e61337
+    m_Address: EvilSnowmanAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07f975a550e403946bb2c40f3270b7c8
+    m_Address: ShadowMotherSlimeJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0739ba724d54909419dc6968ae6a91a6
+    m_Address: ShadowWargoWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e67f8f9fb9732864d8764690f33fbd73
+    m_Address: PumpkinHorrorBaseAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e62fd0097cbbe684f8638a62926b6d94
+    m_Address: ElfAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6205e4edf2e65e4791368a296bbee3e
+    m_Address: YetiAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c637b5464333f0c44ba5b427fec3ad9f
+    m_Address: CyclopDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6bc211ec1093e646bccd39d0a259d9f
+    m_Address: AmazonDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6e68220a01a2e542ada374f968a2cbc
+    m_Address: ShadowDwarfChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a666f295748787e44b33d4cb9be5f90d
+    m_Address: MinotaurDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96ce891bfe36490418a29a10fbc84a3e
+    m_Address: DwarfYellowBearJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96aa7e03327f7634ba7a40062857a720
+    m_Address: HumanTownsfolkJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8643c6507022dea4d9fa7df26fc543e5
+    m_Address: ShadowWargoDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76481a771a982c242a9fd8f6023bd71e
+    m_Address: ShadowTrollCyclopDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76751b4df9a404c4dbaed50b5e48d1fb
+    m_Address: ElfSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66c34c593f3904542b9f79d5f34144ed
+    m_Address: GoblinWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56d4bb761c48af74f96b56dd4d8dfe2a
+    m_Address: SkeletonDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56a0b43bc1285684083efb297da76ee4
+    m_Address: TrasgoAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2668c88dad29b1c428a7254969e901d9
+    m_Address: ShadowBlueMotherSlimeIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 06ef6e5addc53404d87442ebc0fcf34d
+    m_Address: WolfAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 06f96a74f70be1e4dbcdcc4897c1bfea
+    m_Address: DwarfYellowBearChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e50919876ea0a444fbd279dc726d2d14
+    m_Address: MinotaurDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5eb6fe9dbcc9b94184599073d3096d4
+    m_Address: TrollDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b50422cc9e48a564c925cfd95fa8c635
+    m_Address: HumanSoulDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b593999518561e144877311bfe691d16
+    m_Address: AmazonAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9598c78d04a2b634691e405d8b1ee0bc
+    m_Address: ShadowBlueSlimeIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9554e9003889ecf4cbae822010fdc8d3
+    m_Address: HalflingSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 851cb11752a89744aba37898c05f8a00
+    m_Address: ElfAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8549aa9fdf6b91f46a759b2e37e3db09
+    m_Address: BlueSlimeAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 756f6d685d1c9954d8073304a3b0b7cf
+    m_Address: ShadowWildfireIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75a1cedbc41fbc04e9f8367f655ac087
+    m_Address: BlueSlimeIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55e78822cff67a34b923374ecdf708d3
+    m_Address: YetiAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5562ab32a07a4d742b5062a569d3d5c0
+    m_Address: YetiWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55c13a884566ef74289871e2d10dc44d
+    m_Address: DwarfYellowBearSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 457c82d7823067e4c9a26d8a80f61601
+    m_Address: ZombieWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35e732238bb364840bd495ead8b1398a
+    m_Address: HumanChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2547af304ff373947bbf81c1cdd47c63
+    m_Address: ShadowWargoJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 154ed0285f0681044afea1ea3ab12873
+    m_Address: TrollWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1573203a27b9a2942a7005a791aef348
+    m_Address: ShadowCentaurJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05374fb293bf70044974449d2d1cafc3
+    m_Address: SlimeGreenJumpAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0503d5721c34a6848af90c5d0e598c90
+    m_Address: ShadowSlimeDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f44768ef87279a540b2530a9b2742829
+    m_Address: ShadowDwarfIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e45dc02799d5c3b4f9a2e1db971a1642
+    m_Address: YetiDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e43c5988fa3705542a2a53e4fa9b01a1
+    m_Address: GoblinSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e42c903f958fc5d4b972cc3cc2f37f01
+    m_Address: OrcAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b412c8b045a7cdd4d8a8f8e94d8f5c0c
+    m_Address: ShadowBatSleep
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4bdb7b262500714490d5943520daf10
+    m_Address: BlueSlimeJumpAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a46cac2558f756449a6dfaa8f768b7b7
+    m_Address: HumanDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a40876c5ed62f59439b61889b55a9974
+    m_Address: CentaurDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94beb6a8bea4977498547da0aa98d3f1
+    m_Address: WolfIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 945ae4c029730d648a8c5528a949e71e
+    m_Address: YetiDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 74259c92d400c4d4987feedcf931ad23
+    m_Address: OrcJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64673f850a74aa04a8d235d859a6ee14
+    m_Address: ShadowCentaurAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 44b05bcd338343f4bbf5ed623b737507
+    m_Address: SkeletonAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 149ca6b2385d2a1488165b4d09cbcdd3
+    m_Address: ShadowBatDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14db2307e509ca546a7119fe8ccab89e
+    m_Address: ShadowTrollCyclopMinotaurDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14d3acbcb573ad74eb7f271c94d08b4c
+    m_Address: PumpkinHorrorBaseDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14215b799f6d9f048ab151d7d87d4478
+    m_Address: HumanTownsfolkIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3b7f855284e96946b5ea78be57bc302
+    m_Address: HalflingChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d32e1e8f4b963ba4fafbbdc217611826
+    m_Address: HumanTownsfolkAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d312941183faf49419f1d60735c2d879
+    m_Address: AmazonWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c36dc608e519dc849b4797278702c42d
+    m_Address: PumpkinHorrorBaseWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3f847effc2e7ac4ab8ae2f9b791eec1
+    m_Address: DwarfYellowBearAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3bcd57cb860d404bb1bbfedd7704fb4
+    m_Address: BlueMotherSlimeJumpAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3a6832ae219a934396680619e32ac7a
+    m_Address: ShadowHumanoidIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 738728428c51bd04281dfa021749cb46
+    m_Address: ShadowWargoIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 638bca82255867447aa1c0dd854f5fef
+    m_Address: HumanTownsfolkWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 63021eb6b5accd9418772dad9cf2ab63
+    m_Address: ZombieBaseIdleShadow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 530f5c84d44e2f64189c10853ef9dce5
+    m_Address: ShadowWolfIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 531666e3101924948bbd79cc9a2220f0
+    m_Address: CyclopJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5306ef1df457fcb4f906e8802174ef8a
+    m_Address: MotherSlimeGreenJumpAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4301f0f1a1a96eb4b9813a7558e88d5d
+    m_Address: BatDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 03c10d5d41cf2944ba071e8d12da80ff
+    m_Address: BlueMotherSlimeDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2388ffdc8e445740b36577d0036b119
+    m_Address: DwarfChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f245f5f637509d74d9d0d87628f182e9
+    m_Address: CyclopWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2f9649973c6b7c449bba92bbef52610
+    m_Address: DwarfSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b2bbbefcbc4845641b6117929f021705
+    m_Address: WildOrcChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2130bf58a4c5dc43b286bedcb21666d
+    m_Address: SkeletonWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 921a59cb80bcf414f81cd8d3dfc9a393
+    m_Address: ShadowSkeletonIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 821bcfd42f6376d4d8ecbb2836792fd0
+    m_Address: AmazonDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 720d50391f496a441a4078730177b154
+    m_Address: ShadowTrollCyclopMinotaurJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72c1f373738d3464c8b6ccb0d92a127d
+    m_Address: HalflingAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62934b20024ad3d46a67d7b132966588
+    m_Address: ShadowDwarfAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6290eac778bac8b41be58d065fae77ab
+    m_Address: ZombieAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 527322829c540c84794206cab37529d3
+    m_Address: ShadowSkeletonPumkinHorrorWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52c27f07986df84418e20cc7fb0b875b
+    m_Address: DwarfAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 228ddf74638c106468a02844493a47d4
+    m_Address: EvilSnowmanAttackShadows
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2297a18c933d11d4983e387f5de15d36
+    m_Address: BatAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 129dc61b09ffa25449f71e0631fe34c5
+    m_Address: DwarfAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1250cd258148e1a44886f4315fcbbcf4
+    m_Address: MinotaurWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 021faef9f3f8a8e4c82152e085ddd106
+    m_Address: ZombieIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0261dbffd8483d948ad65709c9084ea8
+    m_Address: ShadowTrollCyclopMinotaurlIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1bd7c6bfe988c44b95381ede095d30c
+    m_Address: SlimeGreenAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f17b482fe7f1748449ec8efe4267c1df
+    m_Address: AmazonJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1f151bb6e218a947a9e1a40491cf514
+    m_Address: ElfWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d189e5dd6360f10498402ccb06784e61
+    m_Address: HalflingJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1b4b70557ccfef45bc97d15be468cea
+    m_Address: BlueMotherSlimeIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c1aff84f6bd05924695f54967de12824
+    m_Address: WildfireIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c1a38f3a52f88ef4592878c4c92daac6
+    m_Address: DwarfYellowBeardIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1a94fcbb6e52aa46bab5b33a723c4a7
+    m_Address: CentaurAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1c0bc77a341488498c73b4eb4f53e08
+    m_Address: ShadowMinotaurAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 918db7a5f3995724b9946ec80e28391c
+    m_Address: CyclopDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 915d6996e5e149c4a809c2478c7226ef
+    m_Address: ElfDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91a9019e7688d834e9d747e88da51e07
+    m_Address: ShadowSkeletonPumkinHorrorDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 616fcee69ecb7934d89cb41253908881
+    m_Address: WargoJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61edd0e7d5f23f4468acab56022735f6
+    m_Address: ShadowWildfireDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 313f22ad59f0f924ebf8ebb8d56bfb7c
+    m_Address: DwarfJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 21ed604d35360324ebd8f49ece5a13cc
+    m_Address: AmazonIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2179837afa73b264c8885ea83865bcd8
+    m_Address: ShadowSlimeJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11cac3e41449ff2418f615d32c287b52
+    m_Address: ShadowHumanoidSpinDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01180e61794cbd54eaf49ff8b99448aa
+    m_Address: WildfireFly
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01077273bfcc7454982a07138370fbe4
+    m_Address: ShadowBatAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f000a6eb3bb2e9a45879255368b40715
+    m_Address: WolfWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0a5661f2b8cd6f4cabd8b95da31d922
+    m_Address: PumpkinHorrorBaseDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d025640a2a90c8b49a8be97b28c84762
+    m_Address: DwarfYellowBearWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d07062999dd6e3e40a190e30713c7f5e
+    m_Address: BatAnimations
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c080149b63a5aa0448f9abea13621010
+    m_Address: CentaurIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 80233127311001140b210e77d94fcfb1
+    m_Address: ShadowBlueSlimeDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 707dc0f216fd8034f95a1f3dbfac4c42
+    m_Address: HumanTownsfolkChargedAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60fb01e6c6209d149a5221bc89fb6da8
+    m_Address: ShadowWargoDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 603b070325d0eda409680bb27f19f7cb
+    m_Address: BatSleep
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60d434e636ab7124a8330fdc4b59fbee
+    m_Address: HalflingIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60d4b1f158c35d44f8e1eddf7ba5aec4
+    m_Address: ShadowHumanoidWalk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60729ba1759a6f044b657cd55c1c7024
+    m_Address: CentaurAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60917997043f0a0469f4a43e11c80b77
+    m_Address: ShadowHumanoidDmg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50b9cbd2bd47ae34dabcd0a251738bf2
+    m_Address: OrcIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40d449689d4b63749a2a25789a5c8c04
+    m_Address: PumpkinHorrorBaseIdleActivation
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4083d53ddda25bb4f8bfd94fe05846d7
+    m_Address: WolfJump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 106fa6f3324dcba4099ad2badce9533d
+    m_Address: HumanAttack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 100fdc20180d89a4091970ef5b5aaed2
+    m_Address: MotherSlimeGreenIdle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 100271fd74411f44280b20e97af0cea0
+    m_Address: TrollDie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: adeb5d01871e6be4688aa8482e5c2008, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a3fe2ea07df21ea4fa65970a08fc4e79, type: 2}
+    - {fileID: 11400000, guid: de7e3e1910438db439c6713ac85b300a, type: 2}
