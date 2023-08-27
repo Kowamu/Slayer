@@ -1,25 +1,20 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using Cysharp.Threading.Tasks;
-using UnityEditor;
 using UnityEngine;
+using WanwanLand.Slayer.Editor.Domain.Assets;
 using Debug = UnityEngine.Debug;
 
-namespace Common.Editor.Generators
+namespace  WanwanLand.Slayer.Editor.Generators
 {
-    public static class MessagePackCodeGenerator
+    public class MessagePackCodeGenerator
     {
-        private const string GeneratorDirectoryAssetPath = @"..\GeneratorTools\mpc";
-        private const string Namespace = "Slayer.Domain";
-        private const string ImportDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domain";
-        private const string OutputDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domain\Generated\MessagePack";
+        private const string GeneratorDirectoryAssetPath = @"GeneratorTools\mpc";
 
-        [MenuItem("Generator/MessagePack")]
-        private static void Generate()
+        public void Generate(AssetPath input, AssetPath output) 
         {
-            var assetsDirectoryPath = Path.GetFullPath(Application.dataPath);
-            var generatorPath = Path.Combine(assetsDirectoryPath, GeneratorDirectoryAssetPath);
+            var projectDirectoryPath = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
+            var generatorPath = Path.Combine(projectDirectoryPath, GeneratorDirectoryAssetPath);
 
 #if UNITY_EDITOR_WIN
             generatorPath = Path.Combine(generatorPath, "win/mpc.exe");
@@ -36,9 +31,9 @@ namespace Common.Editor.Generators
                 throw new FileNotFoundException($"{nameof(MessagePackCodeGenerator)} : ファイルが存在しません。");
             }
 
-            var importDirectoryPath = Path.Combine(assetsDirectoryPath, ImportDirectoryAssetPath);
-            var outputDirectoryPath = Path.Combine(assetsDirectoryPath, OutputDirectoryAssetPath);
-            var processArgs = $@"-i ""{importDirectoryPath}"" -o ""{outputDirectoryPath}"" -c -n ""{Namespace}""";
+            var importDirectoryPath = Path.Combine(projectDirectoryPath, input.Value);
+            var outputDirectoryPath = Path.Combine(projectDirectoryPath, output.Value);
+            var processArgs = $@"-i ""{importDirectoryPath}"" -o ""{outputDirectoryPath}""";
             
             var processStartInfo = new ProcessStartInfo
             {
@@ -67,13 +62,6 @@ namespace Common.Editor.Generators
                 
                 Debug.Log($"{nameof(MessagePackCodeGenerator)} : {stdOutput}");
                 Debug.Log($"{nameof(MessagePackCodeGenerator)} : 生成終了");
-                
-                // メインスレッドに戻してからコンパイルを実行する
-                UniTask.Void(async () =>
-                {
-                    await UniTask.SwitchToMainThread();
-                    AssetDatabase.Refresh();
-                });
             };
         }
     }

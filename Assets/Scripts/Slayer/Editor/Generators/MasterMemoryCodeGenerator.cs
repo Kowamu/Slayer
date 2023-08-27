@@ -1,26 +1,20 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using Cysharp.Threading.Tasks;
-using UnityEditor;
 using UnityEngine;
+using WanwanLand.Slayer.Editor.Domain.Assets;
 using Debug = UnityEngine.Debug;
 
-namespace Common.Editor.Generators
+namespace WanwanLand.Slayer.Editor.Generators
 {
-    public static class MasterMemoryCodeGenerator
+    public class MasterMemoryCodeGenerator
     {
-        
-        private const string GeneratorDirectoryAssetPath = @"..\GeneratorTools\MasterMemory.Generator";
-        private const string Namespace = "Slayer.Domain";
-        private const string ImportDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domain";
-        private const string OutputDirectoryAssetPath = @"Scripts\Slayer\Runtime\Domain\Generated\MasterMemory";
+        private const string GeneratorDirectoryAssetPath = @"GeneratorTools\MasterMemory.Generator";
 
-        [MenuItem("Generator/MasterMemory")]
-        private static void Generate()
+        public void Generate(AssetPath input, AssetPath output, string @namespace)
         {
-            var assetsDirectoryPath = Application.dataPath;
-            var generatorPath = Path.Combine(assetsDirectoryPath, GeneratorDirectoryAssetPath);
+            var projectDirectory = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
+            var generatorPath = Path.Combine(projectDirectory, GeneratorDirectoryAssetPath);
 
 #if UNITY_EDITOR_WIN
             generatorPath = Path.Combine(generatorPath, "win-x64/MasterMemory.Generator.exe");
@@ -37,9 +31,9 @@ namespace Common.Editor.Generators
                 throw new FileNotFoundException($"{nameof(MasterMemoryCodeGenerator)} : ファイルが存在しません。");
             }
 
-            var importDirectoryPath = Path.Combine(assetsDirectoryPath, ImportDirectoryAssetPath);
-            var outputDirectoryPath = Path.Combine(assetsDirectoryPath, OutputDirectoryAssetPath);
-            var processArgs = $@"-i ""{importDirectoryPath}"" -o ""{outputDirectoryPath}"" -c -n ""{Namespace}""";
+            var importDirectoryPath = Path.Combine(projectDirectory, input.Value);
+            var outputDirectoryPath = Path.Combine(projectDirectory, output.Value);
+            var processArgs = $@"-i ""{importDirectoryPath}"" -o ""{outputDirectoryPath}"" -n ""{@namespace}""";
             
             var processStartInfo = new ProcessStartInfo
             {
@@ -81,13 +75,6 @@ namespace Common.Editor.Generators
                     "MessagePack.MessagePackSerializerOptions options)", 
                     "MessagePack.MessagePackSerializerOptions options, int maxDegreeOfParallelism)");
                 File.WriteAllText(memoryDatabaseCodePath, memoryDatabaseCode);
-                
-                // メインスレッドに戻してからコンパイルを実行する
-                UniTask.Void(async () =>
-                {
-                    await UniTask.SwitchToMainThread();
-                    AssetDatabase.Refresh();
-                });
             };
         }
     }
