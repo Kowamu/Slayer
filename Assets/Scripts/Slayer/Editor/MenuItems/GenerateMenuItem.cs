@@ -1,7 +1,7 @@
-﻿using UnityEditor;
-using WanwanLand.Slayer.Editor.Generators;
+﻿using Slayer.Editor.Generators;
+using UnityEditor;
 
-namespace WanwanLand.Slayer.Editor.TooltipGenerators
+namespace Slayer.Editor.TooltipGenerators
 {
     public static class GenerateMenuItem
     {
@@ -19,17 +19,17 @@ namespace WanwanLand.Slayer.Editor.TooltipGenerators
         private static void GenerateSlayerMessagePackCode()
         {
             _messagePackCodeGenerator.Generate(
-                @"Assets\Scripts\Slayer\Domain",
-                @"Assets\Scripts\Slayer\Domain\Generated\MessagePack");
+                @"Assets\Scripts\Slayer\Data",
+                @"Assets\Scripts\Slayer\Data\Generated\MessagePack");
         }
         
         [MenuItem("Generator/MasterMemory")]
         private static void GenerateSlayerMasterMemoryCode()
         {
             _masterMemoryCodeGenerator.Generate(
-                @"Assets\Scripts\Slayer\Domain",
-                @"Assets\Scripts\Slayer\Domain\Generated\MasterMemory",
-                "WanwanLand.Slayer.Runtime.Domain.Generated");
+                @"Assets\Scripts\Slayer\Data",
+                @"Assets\Scripts\Slayer\Data\Generated\MasterMemory",
+                "Slayer.Data.Tables");
         }
     }
 }

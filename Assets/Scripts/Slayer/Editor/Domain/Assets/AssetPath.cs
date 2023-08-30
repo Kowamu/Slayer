@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace WanwanLand.Slayer.Editor.Domain.Assets
+namespace Slayer.Editor.Domain.Assets
 {
     /// <summary>
     /// アセットパスの値オブジェクトクラスを表す

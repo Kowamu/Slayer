@@ -1,11 +1,11 @@
 using System;
 using System.Diagnostics;
 using System.IO;
+using Slayer.Editor.Domain.Assets;
 using UnityEngine;
-using WanwanLand.Slayer.Editor.Domain.Assets;
 using Debug = UnityEngine.Debug;
 
-namespace  WanwanLand.Slayer.Editor.Generators
+namespace  Slayer.Editor.Generators
 {
     public class MessagePackCodeGenerator
     {

@@ -2,7 +2,7 @@
 using UniRx;
 using UnityEngine.InputSystem;
 
-namespace WanwanLand.Slayer.Extensions.InputSystems
+namespace Slayer.Extensions.InputSystems
 {
     /// <summary>
     /// InputActionの拡張クラス

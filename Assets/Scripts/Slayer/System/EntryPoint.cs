@@ -1,9 +1,9 @@
 using MessagePack;
 using MessagePack.Resolvers;
-using Slayer.Runtime.Domain.Generated;
+//using Slayer.Runtime.Domain.Generated;
 using UnityEngine;
 
-namespace WanwanLand.Slayer.System
+namespace Slayer.System
 {
     internal static class EntryPoint
     {
@@ -20,8 +20,8 @@ namespace WanwanLand.Slayer.System
             {
 #endif
                 StaticCompositeResolver.Instance.Register(
-                    MasterMemoryResolver.Instance, 
-                    GeneratedResolver.Instance,
+                    //MasterMemoryResolver.Instance, 
+                    //GeneratedResolver.Instance,
                     StandardResolver.Instance);
 
                 var options = MessagePackSerializerOptions.Standard.WithResolver(StaticCompositeResolver.Instance);

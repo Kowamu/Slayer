@@ -2,16 +2,17 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using MasterMemory;
 using MessagePack;
-using WanwanLand.Slayer.Domain.Asset.Addresses;
+using Slayer.Data.Models.Abstractions;
+using Slayer.Data.Models.Assets.Addresses;
 
-namespace WanwanLand.Slayer.Domain.Asset.SpriteSheets
+namespace Slayer.Data.Models.Assets.SpriteSheets
 {
     /// <summary>
     /// ゲーム内のスプライトシートを表す
     /// </summary>
     [MemoryTable("sprite_sheet")]
     [MessagePackObject(keyAsPropertyName: true)]
-    public sealed class SpriteSheet : IEquatable<SpriteSheet>
+    public sealed class SpriteSheetDataModel : IDataModel<SpriteSheetDataModel>
     {
         // --- フィールド ---
         
@@ -25,7 +26,7 @@ namespace WanwanLand.Slayer.Domain.Asset.SpriteSheets
         /// スプライトのアセットアドレスを取得する
         /// </summary>
         [NotNull]
-        public AssetAddress SpriteAssetAddress { get; }
+        public AssetAddressDataModel SpriteAssetAddress { get; }
         
         /// <summary>
         /// スプライトシート内の垂直方向の分割数を取得する
@@ -46,7 +47,7 @@ namespace WanwanLand.Slayer.Domain.Asset.SpriteSheets
         /// <param name="spriteAssetAddress">スプライトのアセットアドレス</param>
         /// <param name="verticalDivisionCount">スプライトシート内の垂直方向の分割数</param>
         /// <param name="horizontalDivisionCount">スプライトシート内の水平方向の分割数</param>
-        public SpriteSheet(int spriteSheetId, [DisallowNull] AssetAddress spriteAssetAddress, int verticalDivisionCount, int horizontalDivisionCount)
+        public SpriteSheetDataModel(int spriteSheetId, [DisallowNull] AssetAddressDataModel spriteAssetAddress, int verticalDivisionCount, int horizontalDivisionCount)
         {
             SpriteSheetId = spriteSheetId;
             SpriteAssetAddress = spriteAssetAddress;
@@ -54,9 +55,22 @@ namespace WanwanLand.Slayer.Domain.Asset.SpriteSheets
             HorizontalDivisionCount = horizontalDivisionCount;
         }
         
+        // --- 演算子 ---
+        
+        public static bool operator ==(SpriteSheetDataModel left, SpriteSheetDataModel right) => Equals(left, right);
+        public static bool operator !=(SpriteSheetDataModel left, SpriteSheetDataModel right) => !Equals(left, right);
+        
         // --- メソッド ---
 
-        public bool Equals(SpriteSheet other)
+        void IValidatable<SpriteSheetDataModel>.Validate(IValidator<SpriteSheetDataModel> validator)
+        {
+            validator.Validate(self => self.SpriteSheetId > 0);
+            validator.Validate(self => self.SpriteAssetAddress != null);
+            validator.Validate(self => self.VerticalDivisionCount > 0);
+            validator.Validate(self => self.HorizontalDivisionCount > 0);
+        }
+        
+        public bool Equals(SpriteSheetDataModel other)
         {
             return 
                 other != null &&
@@ -66,11 +80,13 @@ namespace WanwanLand.Slayer.Domain.Asset.SpriteSheets
                 HorizontalDivisionCount == other.HorizontalDivisionCount;
         }
         
-        public override bool Equals(object obj) => Equals(obj as SpriteSheet);
+        public override bool Equals(object obj) => Equals(obj as SpriteSheetDataModel);
 
         public override int GetHashCode()
         {
             return HashCode.Combine(SpriteSheetId, SpriteAssetAddress, VerticalDivisionCount, HorizontalDivisionCount);
         }
+
+        public override string ToString() => MessagePackSerializer.SerializeToJson(this);
     }
 }

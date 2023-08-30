@@ -1,7 +1,7 @@
 ﻿using System;
 using UniRx;
 
-namespace WanwanLand.Slayer.Extensions.InputSystems.Operetors
+namespace Slayer.Extensions.InputSystems.Operetors
 {
     public static partial class OperatorExtensions 
     {

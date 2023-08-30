@@ -1,12 +1,11 @@
 ﻿using System;
 using UniRx;
-using UniRx.Diagnostics;
 using Unity.Assertions;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using WanwanLand.Slayer.Extensions.InputSystems;
-using WanwanLand.Slayer.Extensions.InputSystems.Operetors;
+using Slayer.Extensions.InputSystems;
+using Slayer.Extensions.InputSystems.Operetors;
 
 namespace Slayer.Presentation.Input.VirtualPads
 {
